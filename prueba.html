@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Página Web</title>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/picnic.min.css">
+  <link rel="stylesheet" type="text/css" href="public/font-awesome.min.css">
+  <style type="text/css">
+    .panel {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      padding-top: 200px;
+    }
+    
+    .blue {
+      background-color: blue;
+    }
+
+    .turqoise {
+      background-color: #eef;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .bordeaux {
+      background-color: #431;
+    }
+  </style>
+  </head>
+  <body>
+
+    
+    <section class="panel blue">
+      <b>ONE</b>
+    </section>
+    <section class="panel turqoise">
+      <b>TWO</b>
+    </section>
+    <section class="panel green">
+      <b>THREE</b>
+    </section>
+    <section class="panel bordeaux">
+      <b>FOUR</b>
+    </section>
+    <script>
+      $(function () { // wait for document ready
+        // init
+        var controller = new ScrollMagic.Controller({
+          globalSceneOptions: {
+            triggerHook: 'onLeave'
+          }
+        });
+
+        // get all slides
+        var slides = document.querySelectorAll("section.panel");
+
+        // create scene for every slide
+        for (var i=0; i<slides.length; i++) {
+          new ScrollMagic.Scene({
+              triggerElement: slides[i]
+            })
+            .setPin(slides[i])
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+        }
+      });
+    </script>
+
+    <script type="text/javascript" src="public/jquery-3.0.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="public/javascript.js"></script>
+  
+  </body>
+</html>

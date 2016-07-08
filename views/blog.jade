@@ -1,0 +1,13 @@
+extend ./layout.jade
+block content
+  section
+    form.contact(action='/blog', method='POST')
+      h1 Nueva entrada del blog
+      input(name='title', placeholder='title')
+      input(name='description', placeholder='description')
+      input(name='media', placeholder='media')
+      input(type='submit', value='Enviar')
+  section
+    each post in posts
+      h2= post.title
+      a(href='blog/' + post._id)= post.title

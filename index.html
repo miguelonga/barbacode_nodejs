@@ -9,19 +9,53 @@
   <link rel="stylesheet" type="text/css" href="public/font-awesome.min.css">
   </head>
   <body>
+
     <section>
+      <div class="parallax-window">
+        <div class="wrapper wrapper-active">
+          <div class="animation animation-active">
+            <h2 id="my-sticky-element">PhotoConnect</h2>
+            <h6 class="slogan">Share Photos, Connect People</h6>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <nav class="navbar">
+      <a href="#" class="brand">
+        <i class="fa fa-camera-retro"></i>
+        <span>PhotoConnect</span>
+      </a>
+
+      <!-- responsive-->
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">&#8801;</label>
+
+      <div class="menu">
+        <a href="#" class="pseudo button icon-picture">Demo</a>
+        <a href="/contact" class="button icon-puzzle">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- <section>
       <div class="hero">
-        <div class="wrapper">
-          
+        <div class="wrapper wrapper-active">
+          <div class="animation animation-active">
+            <h2>PhotoConnect</h2>
+            <div>
+              <p>Algo</p>
+            </div>
+          </div>
         </div>
       </div>  
-    </section>
+    </section> -->
 
     <section>
       <div class="header">
-        <h3>Esto es lo que hay</h3>
+        <h3 id="features">Esto es lo que hay</h3>
       </div>
-      <div class="container flex three">
+      <div class="container flex three-900 one">
         <div>
           <div class="element feature">
             <i class="fa fa-camera-retro"></i>
@@ -43,11 +77,19 @@
       </div>
     </section>
 
-    
-
-
+    <section>
+      <div class="big-banner">
+        <div class="wrapper">
+          <h2>Algo</h2>
+        </div>
+      </div>  
+    </section>
 
     <script type="text/javascript" src="public/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="public/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="public/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="public/parallax.min.js"></script>
     <script type="text/javascript" src="public/javascript.js"></script>
+  
   </body>
 </html>

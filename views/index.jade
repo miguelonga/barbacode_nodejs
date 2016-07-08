@@ -1,0 +1,55 @@
+extend ./layout.jade
+block content
+  section
+    .parallax-window
+      .wrapper.wrapper-active
+        .animation.animation-active
+          h2#my-sticky-element PhotoConnect
+          h6.slogan Share Photos, Connect People
+  nav.navbar
+    a.brand(href='#')
+      i.fa.fa-camera-retro
+      span PhotoConnect
+    // responsive
+    input#bmenub.show(type='checkbox')
+    label.burger.pseudo.button(for='bmenub') ≡
+    .menu
+      a.pseudo.button.icon-picture(href='/blog') Blog
+      a.button.icon-puzzle(href='/contact') Contacto
+  section
+    .header
+      h3#features Esto es lo que hay
+    .container.flex.three-900.one
+      div
+        .element.feature
+          i.fa.fa-camera-retro
+          p Algo vino algo se fue, algo vino a volver pero quedó en padecer.
+      div
+        .element.feature
+          i.fa.fa-film
+          p Algo vino algo se fue, algo vino a volver pero quedó en padecer.
+      div
+        .element.feature
+          i.fa.fa-flask
+          p Algo vino algo se fue, algo vino a volver pero quedó en padecer.
+  section
+    .container.flex.three-900.one
+      div
+        .element.feature
+          i.fa.fa-camera-retro
+          p Algo vino algo se fue, algo vino a volver pero quedó en padecer.
+      div
+        .element.feature
+          i.fa.fa-film
+          p Algo vino algo se fue, algo vino a volver pero quedó en padecer.
+      div
+        .element.feature
+          i.fa.fa-flask
+          p Algo vino algo se fue, algo vino a volver pero quedó en padecer.
+
+
+  script(type='text/javascript', src='public/jquery-3.0.0.min.js')
+  script(type='text/javascript', src='public/ScrollMagic.min.js')
+  script(type='text/javascript', src='public/debug.addIndicators.min.js')
+  script(type='text/javascript', src='public/parallax.min.js')
+  script(type='text/javascript', src='public/javascript.js')

@@ -1,0 +1,7 @@
+extend ./layout.jade
+block content
+  section
+    h2= post.title
+    p= post.description
+    each photo in media
+      div.photo-blog(style="background-image: url(" + photo + ")")
